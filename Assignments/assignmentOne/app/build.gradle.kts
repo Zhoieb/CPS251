@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.wheatherassignment"
+    namespace = "com.example.weatherassignment"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.example.wheatherassignment"
+        applicationId = "com.example.weatherassignment"
         minSdk = 24
         targetSdk = 36
         versionCode = 1

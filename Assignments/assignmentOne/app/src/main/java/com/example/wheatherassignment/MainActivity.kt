@@ -73,13 +73,13 @@ fun CurrentWeatherSection() {
 
     ) {
         // TODO: Call the WeatherAlertOverlay composable function here
-        WeatherAlertOverlay()
+            WeatherAlertOverlay()
         // See "Box Layout" lesson for examples of Box usage and content alignment
-
-        // TODO: Create a Column with 3 text elements and 1 row of two text elements
             Column (
+
                 horizontalAlignment = Alignment.CenterHorizontally
             ){
+                //WeatherAlertOverlay()
                 //Temperature:
                 Text(
                     text = "72 F",
@@ -110,6 +110,7 @@ fun CurrentWeatherSection() {
                     modifier = Modifier.padding(top = 16.dp),
                     horizontalArrangement = Arrangement.spacedBy(32.dp)
                 ) {
+                    //HIGH
                     Text(
                         text = "H: 78 F",
                         style = TextStyle(
@@ -117,6 +118,7 @@ fun CurrentWeatherSection() {
                             color = MaterialTheme.colorScheme.onPrimaryContainer,
                         )
                     )
+                    //LOW
                     Text(
                         text = "L: 65 F",
                         style = TextStyle(
@@ -127,32 +129,6 @@ fun CurrentWeatherSection() {
                 }
             }
         }
-        // The column will have horizontalAlignment=Alignment.CenterHorizontally
-        // All text colors will be MaterialTheme.colorScheme.onPrimaryContainer
-        // See "Column Layout" lesson for examples of Column usage and alignment
-
-        // TODO: First text element displaying "72 F" will have:
-        // - fontSize = 48.sp
-        // - fontWeight = FontWeight.Bold
-        // See "Layout Basics" lesson for examples of text styling and sizing
-
-        // TODO: Second text element displaying "Partly Cloudy" will have:
-        // - fontSize = 18.sp
-        // See "Layout Basics" lesson for examples of text styling
-
-        // TODO: Third text element displaying "Ann Arbor, MI" will have:
-        // - fontSize = 16.sp
-        // See "Layout Basics" lesson for examples of text styling
-
-        // TODO: Create a Row with the following properties:
-        // - modifier = Modifier.padding(top = 16.dp)
-        // - horizontalArrangement = Arrangement.spacedBy(32.dp)
-        // See "Row Layout" lesson for examples of Row usage and arrangement
-
-        // TODO: Add two text elements to the row:
-        // - First text: "H: 78 F" with fontSize = 16.sp
-        // - Second text: "L: 65 F" with fontSize = 16.sp
-        // See "Row Layout" lesson for examples of adding content to rows
     }
 
 @Composable
