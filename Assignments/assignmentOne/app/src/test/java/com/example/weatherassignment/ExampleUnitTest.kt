@@ -1,4 +1,4 @@
-package com.example.wheatherassignment
+package com.example.weatherassignment
 
 import org.junit.Test
 
