@@ -371,7 +371,7 @@ fun ProfileScreen(
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .padding(16.dp),
+            .padding(top = 32.dp, start = 16.dp, end = 16.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text(
@@ -389,11 +389,11 @@ fun ProfileScreen(
                 modifier = Modifier.padding(24.dp),
                 verticalArrangement = Arrangement.spacedBy(16.dp)
             ) {
-                ProfileRow("Name ", value = userName)
-                ProfileRow("Email ", value =  " Zbigham@wccnet.edu")
-                ProfileRow("Student ID ", value =  " 12345678")
-                ProfileRow("Major ", value = " Computer Science")
-                ProfileRow("Year ", value = " 2026")
+                ProfileRow("Name", value = userName)
+                ProfileRow("Email", value = "Zbigham@wccnet.edu")
+                ProfileRow("Student ID", value = "12345678")
+                ProfileRow("Major", value = "Computer Science")
+                ProfileRow("Year", value = "2026")
             }
         }
         Spacer(modifier = Modifier.weight(1f))
@@ -409,14 +409,15 @@ fun ProfileScreen(
 @Composable
 fun ProfileRow(label: String, value: String) {
     Row (
-        //modifier = Modifier
-        //.fillMaxWidth()
-        //.padding(vertical = 8.dp),
-        horizontalArrangement = Arrangement.SpaceBetween
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(vertical = 8.dp),
+        horizontalArrangement = Arrangement.Start
     ){
         Text(
             text = label,
-            style = MaterialTheme.typography.bodyLarge.copy(fontWeight = FontWeight.Medium)
+            style = MaterialTheme.typography.bodyLarge.copy(fontWeight = FontWeight.Medium),
+            modifier = Modifier.padding(end = 12.dp)
         )
         Text (
             text = value,
